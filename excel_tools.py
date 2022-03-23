@@ -41,11 +41,3 @@ class ExcelTools:
     def close_app():
         app.quit()
 
-
-'''datas = [[1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14]]
-create_workbook(app, file_name)
-for i in range(len(datas)):
-    rows = get_rows("TCB")
-    data = datas[i]
-    additional_data("TCB", data, rows)
-app.quit()'''
