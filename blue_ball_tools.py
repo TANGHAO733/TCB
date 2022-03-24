@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class BlueBallTool:
     file_name = r"TCB.xlsx"
     datas = pd.read_excel(file_name)
