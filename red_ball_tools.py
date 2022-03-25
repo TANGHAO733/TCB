@@ -39,3 +39,13 @@ class RedBallTool(FeaturesAnalysis):
         result = set(ball_full_list) - red_lot_result
         result = list(result | set(ball_list))
         return result
+
+    def erlian(self):
+        count = self.analysis_tool.features_hit("二连码")
+        result = self.analysis_tool.features_data.iloc[count]
+        return list(result)
+
+    def tongwei(self):
+        count = self.analysis_tool.features_hit("同位码")
+        result = self.analysis_tool.features_data.iloc[count]
+        return list(result)
